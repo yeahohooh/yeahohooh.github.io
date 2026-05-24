@@ -5,7 +5,6 @@ draft: false
 type: "page"
 ---
 
-# KIRO Cam Technical Support
 
 Thank you for using KIRO Cam.
 
