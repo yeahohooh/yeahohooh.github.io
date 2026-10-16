@@ -16,23 +16,13 @@
   {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "css/style.css" . | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
   <style>
-    .aptsub-header { padding: 28px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
-    .aptsub-brand { font-size: 1.4rem; font-weight: 700; }
-    .aptsub-nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 12px; font-size: .9rem; }
-    .aptsub-main { padding-top: 32px; overflow-wrap: anywhere; }
-    .aptsub-main h1 { line-height: 1.35; }
+    .aptsub-main { margin: 0 auto; padding-top: 20px; overflow-wrap: anywhere; }
+    .aptsub-main h1 { margin: 0 0 20px; line-height: 1.35; }
     .aptsub-footer { padding: 24px 0 36px; border-top: 1px solid rgba(255,255,255,.12); font-size: .9rem; }
-    .aptsub-nav a:focus-visible, .content a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+    .content a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   </style>
 </head>
 <body>
-  <header class="section-inner thin aptsub-header">
-    <span class="aptsub-brand">AptSub</span>
-    <nav class="aptsub-nav" aria-label="AptSub support">
-      <a href="{{ "support_aptsub/" | relURL }}"{{ if eq .RelPermalink "/support_aptsub/" }} aria-current="page"{{ end }}>Support / 技术支持</a>
-      <a href="{{ "privacy_aptsub/" | relURL }}"{{ if eq .RelPermalink "/privacy_aptsub/" }} aria-current="page"{{ end }}>Privacy Policy / 隐私政策</a>
-    </nav>
-  </header>
   <main class="site-main section-inner thin aptsub-main">
     <h1>{{ .Title }}</h1>
     <div class="content">{{ .Content }}</div>

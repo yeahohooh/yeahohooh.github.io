@@ -8,8 +8,6 @@ url: "/privacy_aptsub/"
 description: "How AptSub handles local videos, subtitles, permissions, Apple subscriptions, and support communications on iPhone, iPad, and Mac."
 ---
 
-[English](#english) · [简体中文](#简体中文)
-
 ## English
 
 **Effective date: October 15, 2026**

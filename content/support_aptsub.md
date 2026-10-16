@@ -8,8 +8,6 @@ url: "/support_aptsub/"
 description: "Contact AptSub support and find help with local subtitle recognition, editing, exports, and subscriptions on iPhone, iPad, and Mac."
 ---
 
-[English](#english) · [简体中文](#简体中文)
-
 ## English
 
 Thank you for using AptSub on iPhone, iPad, or Mac. AptSub turns speech in your videos into editable subtitles using built-in models that run on your device.
